@@ -1,0 +1,138 @@
+@import url("../explore-programs-card.css");
+
+/* TODO-done: Move to top */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  transition-duration: 0.1s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.explore-programs {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 80px 0 80px 0;
+}
+
+.explore-programs .services-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 0px;
+}
+
+.explore-programs-button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-programs__all-programs {
+  text-wrap: wrap;
+  text-decoration: none;
+  color: rgba(16, 24, 40, 1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 80px;
+}
+
+.explore-programs .page__title {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.explore-programs .page__sub-title {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 12px;
+  gap: 0;
+}
+
+.explore-programs .page__desc {
+  margin: 20px 0 100px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.carousel a {
+  text-decoration: none;
+}
+
+.carousel-indicators {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+  gap: 12px;
+  box-sizing: content-box;
+  border-radius: 8px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(44, 44, 44);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin: 40px 0 40px 0;
+  color: rgba(217, 217, 217, 1);
+}
+
+.carousel-indicators [data-bs-target].active {
+  width: 48px;
+  background-color: #7f56d9;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .explore-programs {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .explore-programs .page__title {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+
+  .explore-programs .page__sub-title {
+    margin: 70px 0 0 0;
+  }
+
+  .explore-programs .page__desc {
+    margin: 10px 0 0 0;
+  }
+
+  .explore-program__carousel {
+    margin: 100px 0 0 0;
+  }
+}

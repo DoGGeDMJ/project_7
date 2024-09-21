@@ -1,0 +1,112 @@
+.explore-programs {
+  overflow-x: hidden;
+}
+
+.explore-programs .card-body {
+  width: 336px;
+  position: relative;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  padding: 24px;
+}
+
+.explore-programs .card-body__section-top {
+  margin: 0 0 32px 0;
+}
+
+.explore-programs .card-body__section-top__image {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.explore-programs .card-body__section-top__image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.explore-programs .card-body__section-top__timer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 11px;
+  right: 11px;
+  padding: 6px 10px 6px 10px;
+  gap: 6px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.explore-programs .card-body__section-top__timer img {
+  width: 16px;
+}
+
+.explore-programs .card-body__card-section-center-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(105, 65, 198, 1);
+  margin: 0 0 12px 0;
+}
+
+.explore-programs .card-body__card-section-center-sub-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(16, 24, 40, 1);
+  margin: 0 0 12px 0;
+}
+
+.explore-programs .card-body__card-section-center-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(102, 112, 133, 1);
+  margin: 0 0 61px 0;
+}
+
+.explore-programs .card-body__card-section-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.explore-programs .card-body__card-section-bottom__author-img {
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(16, 24, 40, 1);
+}
+
+.explore-programs .card-body__card-section-bottom__author-enrolled {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(102, 112, 133, 1);
+}
+
+.explore-programs .card-body__card-section-bottom-cost {
+  margin-left: auto;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31.47px;
+  text-align: right;
+  color: rgba(127, 86, 217, 1);
+}
+
+.explore-programs .card-body__card-section-bottom-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 110px 0 12px;
+}
+
+.explore-programs .card-body__card-section-bottom-info__year {
+  width: 90px;
+}

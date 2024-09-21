@@ -1,0 +1,40 @@
+@import url("./icomoon/style.css");
+@import url("./variables.css");
+@import url("./fonts.css");
+@import url("./sections/header.css");
+@import url("./sections/banner.css");
+@import url("./sections/our_services.css");
+@import url("./sections/explore-programs.css");
+@import url("./sections/tutors.css");
+@import url("./sections/review.css");
+@import url("./sections/recent-blogs.css");
+@import url("./sections/footer.css");
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", cursive;
+  margin: 0px auto;
+  color: var(--blue);
+  color: black;
+  background-color: #f9fafb;
+}
+
+.container {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.highlight-line {
+  position: relative;
+  top: -10px;
+  height: 1px;
+  background-color: rgba(169, 169, 169, 0.5);
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}

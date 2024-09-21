@@ -1,0 +1,100 @@
+.tutors .page__desc {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  width: 768px;
+  height: 124px;
+  gap: 32px;
+  position: relative;
+}
+
+.tutors .media-icon {
+  color: gray;
+}
+
+.tutor-elements__tutor-cards {
+  margin-top: 64px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.tutor-elements__tutor-cards img {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.tutor-cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 228px;
+  height: 292px;
+}
+
+.tutor-name {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(16, 24, 40, 1);
+}
+
+.tutor-prof {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(105, 65, 198, 1);
+}
+
+.tutor-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(102, 112, 133, 1);
+  margin: 8px 0 16px 0;
+}
+
+.tutor-social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 390px) {
+  .tutors_elements .page__title {
+    margin: 0;
+  }
+
+  .tutors_elements .page__desc {
+    width: 380px;
+    margin: 0;
+  }
+
+  .tutor-cards__item {
+    width: 100%;
+    box-shadow: 0 12px 16px -4px rgba(16, 24, 40, 0.08);
+    padding: 10px 0 10px 0;
+  }
+
+  .tutor-elements__tutor-cards {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+  }
+}
