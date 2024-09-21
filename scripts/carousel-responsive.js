@@ -1,11 +1,12 @@
 $(document).ready(function () {
   const maxPerSlide = 2;
+  const className = ".carousel-responsive";
 
   document
-    .querySelectorAll(".carousel .carousel-item")
+    .querySelectorAll(`${className} .carousel-item`)
     .forEach((element) => {});
 
-  $(".carousel .carousel-item").each(function () {
+  $(`${className} .carousel-item`).each(function () {
     let $currentItem = $(this);
     let $next = $currentItem.next().length
       ? $currentItem.next()
@@ -23,12 +24,8 @@ $(document).ready(function () {
   });
 
   function updateCardStyles() {
-    // const $activeCards = $("carousel-item.active .card");
     $("carousel-item .card").removeClass("active-card").addClass("card"); //
   }
-
-  $('button[data-bs-target="#myCarousel"]').on("click", updateCardStyles);
-  $("#myCarousel").on("slide.bs.carousel slid.bs.carousel", updateCardStyles);
 
   updateCardStyles();
 });
